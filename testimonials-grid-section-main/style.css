@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Hanken+Grotesk:wght@500;700;800&family=Inter:wght@300;400&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Montserrat:wght@300;400;700&family=Overpass:wght@400;700&family=Red+Hat+Display:wght@500;700;900&family=Satisfy&family=Source+Code+Pro:wght@200&display=swap');
+
+
+:root{
+    --Moderate_violet: hsl(263, 55%, 52%);
+    --Very_dark_grayish_blue: hsl(217, 19%, 35%);
+    --Very_dark_blackish_blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%); 
+    --Light_gray: hsl(0, 0%, 81%);
+    --Light_grayish_blue: hsl(210, 46%, 95%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+body{
+    background: var(--Light_grayish_blue);
+    font-size: 13px;
+    font-family: "Barlow Semi Condensed";
+    line-height: 1.7;
+}
+
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4rem;
+    min-height: 100vh;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header h3{
+    margin-bottom: 0;
+    padding: 0;
+}
+
+img{
+    border-radius: 50%;
+    border: 2px solid var(--Moderate_violet);
+    margin-right: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.name p{
+    opacity: 50%;
+}
+
+.Daniel{
+    background: var(--Moderate_violet);
+    grid-column: 1/3;
+    grid-row: 1/2;
+    color: var(--White);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 6rem;
+}
+
+.Jonathan{
+    background: var(--Very_dark_grayish_blue);
+    grid-column: 3/4;
+    grid-row: 1/2;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    color: var(--White);
+}
+
+.Kira{
+    background-color: var(--White);
+    grid-column: 4/5;
+    grid-row: 1/3;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    color: var(--Very_dark_blackish_blue);
+}
+
+.Harmon{
+    background: var(--White);
+    grid-row: 2/3;
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.Kira h3, .Harmon h3{
+    color: var(--Very_dark_blackish_blue);
+}
+
+.Abrams{
+    grid-column: 2/4;
+    background: var(--Very_dark_blackish_blue);
+    color: var(--White);
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.paragraph{
+    opacity: 70%;
+}
+
+h3{
+    font-weight: 600;
+}
+
+.comment{
+    padding: 1.5rem 0;
+}
+
+.attribution {
+    font-size: 11px; 
+    text-align: center; 
+}
+
+
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 475px){
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Daniel{
+        background-position: top right 0.8rem;
+    }
+}
